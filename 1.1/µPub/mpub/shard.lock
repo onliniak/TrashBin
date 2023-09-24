@@ -1,0 +1,10 @@
+version: 2.0
+shards:
+  seg:
+    git: https://github.com/soveran/seg.git
+    version: 0.1.0+git.commit.8580a8b398300ad58088ff71c061515cf4be5149
+
+  toro:
+    git: https://github.com/soveran/toro.git
+    version: 0.4.1
+
