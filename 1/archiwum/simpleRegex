@@ -1,0 +1,17 @@
+(?<key>[\w]*):(?<inlineValue>[ \w]*)
+(?<indent>[\s]*)(?<value>[\w]*) #2ms
+
+(.*?):\s(.*) #1ms
+
+(?<key>.*?):\s(?<value>.*) #0ms
+
+Hello:
+World
+
+Hello:
+  World
+
+Hello:
+     World
+
+Hello: World

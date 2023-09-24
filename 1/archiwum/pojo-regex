@@ -1,0 +1,6 @@
+PCRE
+(?P<value>(?:(?P<q2>['\"]).*?(?P=q2))|[^#]+?)(?P<indent>^ *)(?P<variable>.+?)\s*:
+JS
+(?<value>(?:(?<q2>['\"]).*?(?=q2))|[^#]+?)(?<indent>^ *)(?<variable>.+?)\s*:
+
+Regex https://github.com/hackebrot/poyo

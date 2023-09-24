@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+
+<head>
+  <meta charset="utf-8" />
+  <title>txt2WebGame</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/webp" sizes="16x16" href="/favicon.webp">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/picomodal/3.0.0/picoModal.min.js"></script>
+  <style>
+    @import url('https://unpkg.com/sakura.css/css/sakura-vader.css') (prefers-color-scheme: dark);
+    @import url('https://unpkg.com/sakura.css/css/sakura.css') (prefers-color-scheme: ligth);
+
+    .hide {
+      display: none;
+    }
+
+    :target {
+      display: block;
+      border-top: 1px solid;
+      margin-top: 10px;
+      padding-top: 10px;
+    }
+
+    html {
+      margin: 15px;
+    }
+
+    body {
+      display: -ms-grid;
+      display: grid;
+      -ms-grid-columns: 1fr 2.5fr 1fr;
+      grid-template-columns: 1fr 2.5fr 1fr;
+      max-width: 100%;
+    }
+  </style>
+</head>
+
+<body>
+  <section></section>
+  <article></article>
+  <section>
+    <button type="button" onclick="location.href='#layout'">Zwykła strona</button>
+    <button type="button" onclick="city.show();window['pico-1'].style['display']='grid';window['pico-1'].style['background-color']='inherit';window['pico-1'].style['border']='5px solid'
+    ">Miasto</button>
+    <button type="button" onclick="location.href='#txt'">Tekst</button>
+
+    <div class="hide" id="layout">
+      <button onclick="updateLayout('img')">Zdjęcie</button>
+    </div>
+
+    <div class="hide" id="txt">
+      <textarea name="txt" cols="30" rows="4"></textarea>
+    </div>
+  </section>
+
+  <script>
+    const layout = {}
+    let article = document.getElementsByTagName('article')[0]
+    let city = picoModal(`
+    <label for="cityName">Podaj nazwę miasta</label>
+    <input type="text" name="cityName">
+    <textarea name="city" cols="30" rows="10">DzielnicaPierwsza:
+  name1: link1
+  name2: link2
+  name3: link3
+  name4: link4
+dzielnica_druga:
+  another_name1: betterLink
+  another_name2: betterLink2
+  another_name3: betterLink3</textarea>
+  <details>
+  <summary>Ustawienia zaawansowane</summary>
+  <label for="cityColumns">Na ile części podzielić ekran ?</label>
+    <input type="number" name="cityColumns" value="3" min="1">
+</details> 
+<details>
+  <summary>"Instrukcja"</summary>
+  <ol>
+<li>Żeby stworzyć miasto, zacznij od podania nazwy dzielnicy.
+<ol>
+<li>Zakończ dwukropkiem.</li>
+<li>Poszczególne wyrazy oddziel _</li>
+<li>Przed dużymi literami zostanie wpisana spacja.</li>
+</ol>
+</li>
+<li>Enter.</li>
+<li>Dwie spacje.</li>
+<li>Podaj nazwę pierwszej lokacji.
+<ol>
+<li>Zakończ dwukropkiem.</li>
+<li>Poszczególne wyrazy oddziel _</li>
+<li>Przed dużymi literami nie pojawi się spacja.</li>
+</ol>
+</li>
+<li>Dwie spacje.</li>
+<li>Podaj nazwę strony, do której ma prowadzić link
+<ol>
+<li>Czyli jeśli link to strona.pl/strona123 → wpisz strona123</li>
+<li>Nie używaj spacji</li>
+</ol>
+</li>
+<li>Enter.</li>
+<li>I kolejne lokacje …</li>
+<li>Albo po prostu spójrz na przykład.</li>
+<li>Gdy skończysz, wyświetl miasto by zobaczyć jak będzie wyglądać.</li>
+<li>Możesz podzielić ekran na dowolną liczbę kolumn, domyślnie są 3.
+</li>
+<li>Podaj nazwę miasta
+<ol>
+<li>Pojawi się w adresie strony.</li>
+<li>Pozwoli na dopasowanie odpowiedniego zdjęcia i opisu miasta.</li>
+</ol>
+</li>
+<li>I wyślij, w ciągu kilku minut nowe miasto pojawi się w grze.</li>
+</ol>
+</details> 
+    <button onclick="renderCity()">Wyświetl miasto</button>
+    <button onclick="publishCity()">Opublikuj miasto</button>
+    `);
+
+    function updateLayout(element) {
+      if (element == 'img') {
+        Img()
+      }
+      if (element == 'txt') {
+        Txt()
+      }
+      if (element == 'link') {
+        Link()
+      }
+      console.log(layout)
+    }
+
+    function Img() {
+      var img = prompt("Wpisz adres swojego zdjęcia");
+      if (img != null) {
+        //imgWidth = article.offsetWidth * 0.79
+        //imgHeight = screen.height * 0.415
+        let newImg = new Image()
+        newImg.loading = 'lazy'
+        newImg.src = img
+        newImg.style['margin'] = '0px -10.5% auto -10.5%'
+
+        layout.img = img
+        article.appendChild(newImg)
+      }
+    }
+    function renderCity() {
+      const str = document.getElementsByName("city")[0].textContent
+      const regexp = /(?<category>\w*):\s*((?<a>\w*):\s+(?<href>\w*))*(\w*)*/g
+      const array = [...str.matchAll(regexp)]
+
+      const district = /^\S$|^\S*\S$/gm
+      const str2 = str.replaceAll(/:/g, '')
+      const array2 = [...str2.matchAll(district)]
+      let i, g, a, r
+      r = {}
+
+      function dynamicArrayVariables(variable) {
+        window[variable] = []
+      }
+      array2.forEach(dynamicArrayVariables)
+
+      for (i = 0; i < array.length; i++) {
+        if (typeof array[i][5] === 'undefined')
+          g = i
+        if (typeof array[i][3] != 'undefined') {
+          let key = array[i][3]
+          window[array[g][1]].push({
+            [key]: array[i][4]
+          })
+        }
+
+        if (typeof array[i][3] === 'undefined')
+          if (array[i][1] != array[i][3]) {
+            let key = array[i][1]
+            window[array[g][1]].push({
+              [key]: array[i][5]
+            })
+          }
+      }
+
+      const links = str.toString()
+
+      for (i = 0; i < array2.length; i++) {
+        const length = window[array2[i]].length
+
+        for (a = 0; a < length; a++) {
+
+          const regex = new RegExp(`${array2[i].toString()}:(\\s*(\\w*):\\s*(\\w*)){${a + 1}}`, "g")
+          const found = [...links.matchAll(regex)]
+
+          mainCategory = array2[i].toString()
+          r[`${mainCategory}Links`] += `${found[0][3]}@`
+          r[`${mainCategory}Names`] += `${found[0][2]}@`
+
+        }
+        arrayNames = r[`${mainCategory}Names`]
+          .replace("undefined", "")
+          .replaceAll("_", " ")
+          .split("@")
+
+        arrayLinks = r[`${mainCategory}Links`]
+          .replace("undefined", "")
+          .split("@")
+
+        columns = document.getElementsByName('cityColumns')[0].value
+        div = document.createElement('div')
+        div.id = mainCategory
+        div.style['display'] = 'grid'
+        div.style['justify-items'] = 'center'
+        article.style['display'] = 'grid'
+        article.style['grid-template-columns'] = 'auto '.repeat(columns)
+        a = mainCategory.replace(/([A-Z])/g, ' $1')
+        b = a.replace(/_/g, ' ')
+
+        dzielnica = document.createElement('strong')
+        dzielnica.textContent = b
+        article.appendChild(div);
+        div.appendChild(dzielnica)
+
+        for (c = 0; c < length; c++) {
+          link = document.createElement('a')
+          link.setAttribute('href', arrayLinks[c])
+          link.textContent = arrayNames[c]
+          document.getElementById(mainCategory).appendChild(link);
+        }
+      }
+    }
+
+  </script>
+</body>
+
+</html>
