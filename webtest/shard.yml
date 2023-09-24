@@ -1,0 +1,19 @@
+name: webtest
+version: 0.1.0
+
+authors:
+  - Rafael Pszenny <onliniak@gmail.com>
+  
+dependencies:
+    
+development_dependencies:
+  kemal:
+    github: kemalcr/kemal
+
+targets:
+  webtest:
+    main: src/webtest.cr
+
+crystal: 1.1.1
+
+license: MIT

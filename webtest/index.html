@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <p>Hello World!</p>
+  <script type="module">
+    import { create } from "https://cdn.jsdelivr.net/npm/@github/webauthn-json@0.5.7/dist/main/webauthn-json.min.js"
+
+    async function auth() {
+      const authResponse = await await create({
+        publicKey: {
+          challenge: "CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC",
+          rp: { name: "Localhost, Inc." },
+          user: {
+            id: "IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII",
+            name: "test_user",
+            displayName: "Test User",
+          },
+          pubKeyCredParams: [{ type: "public-key", alg: -7 }],
+        },
+      });
+      console.log(authResponse)
+    }
+
+    auth()
+  </script>
+</body>
+
+</html>
