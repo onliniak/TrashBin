@@ -1,0 +1,29 @@
+aside#left > section > div {
+    display: none
+}
+
+aside#left > section > div.opentab {
+    display: block;
+    display: grid;
+    grid-template: auto/auto auto auto auto;
+    grid-gap: 10px;
+    padding: 10px 10px;
+}
+
+#dropzone {
+    display: flex;
+    flex-direction: column;
+    background-color: gainsboro;
+    width: 32px;
+    min-height: 5vh;
+}
+
+#coreCategory > img {
+    width: 48px;
+}
+
+@supports (display: grid) {
+    #dropzone {
+        padding: 10%;
+    }
+}

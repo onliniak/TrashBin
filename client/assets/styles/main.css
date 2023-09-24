@@ -1,0 +1,24 @@
+@import "./tabs.css";
+
+.grid-container > * {
+    display: table-cell;
+    padding: 0 2.5px;
+    min-width: 5%;
+}
+.grid-container > main:first-of-type {
+    min-width: 12%;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+}
+
+@supports (display: grid) {
+    .grid-container {
+        display: grid;
+        grid-template: 
+            "a b c" 55vh
+            "d b c" 1vh/ 4.5fr 11fr 4.5fr
+    }
+  }
