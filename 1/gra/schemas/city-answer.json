@@ -1,0 +1,28 @@
+[
+  {
+    "name": "Pierwsza dzielnica",
+    "location": [
+      {
+        "name": "Miejsce",
+        "link": "https://example.com/"
+      },
+      {
+        "name": "Miejsce2",
+        "link": "https://example.com/"
+      }
+    ]
+  },
+  {
+    "name": "Druga dzielnica",
+    "location": [
+      {
+        "name": "Miejsce",
+        "link": "https://example.com/"
+      },
+      {
+        "name": "Miejsce2",
+        "link": "https://example.com/"
+      }
+    ]
+  }
+]

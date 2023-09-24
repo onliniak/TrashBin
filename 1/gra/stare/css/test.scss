@@ -1,0 +1,18 @@
+@mixin columnWidth($selector, $width, $child: "") {
+
+  $letter-width: map-get((4 : four,
+        8 : eight,
+      ), $width);
+  $column-width: $width/12*100%;
+
+  #{$selector}.#{$letter-width} #{$child} {
+    display: table-cell;
+    display: inline-flex;
+    width: $column-width;
+  }
+}
+
+@include columnWidth("div.columns", 4, "> div");
+@include columnWidth("div.kot", 8);
+@include columnWidth("div.pies", 4);
+

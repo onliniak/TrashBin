@@ -1,0 +1,14 @@
+[
+    {
+      "name": "zdrowia",
+      "effect": 4,
+      "power": 100,
+      "price": 12345
+    },
+    {
+      "name": "many",
+      "effect": 3,
+      "power": 100,
+      "price": 12345 
+    }
+  ]

@@ -1,0 +1,3 @@
+Arrows  can  cause  damage  to  a  human  by  puncturing,  stabbing,  tearing,  cutting  or  a combination  of  these  mechanisms  depending  on  the  arrowhead  used.    In  the  Handbook  of Forensic  Medicine  [10],  it  is  stated  that  the  wounding  potential  of  an  arrow  is  primarily dependent  on  the  shape  of  the  arrowhead.  For  example,  puncture  wounds  being  caused  by pointed  or  rounded  tips  and  cuts  caused  by  a  sharp  tip  being  forced  into  the  body. 
+
+https://rke.abertay.ac.uk/ws/files/14226783/Fraser_AComparisonofPenetrationandDamage_Accepted_2017.pdf

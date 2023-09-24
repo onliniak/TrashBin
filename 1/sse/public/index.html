@@ -1,0 +1,6 @@
+<script>
+const event = new EventSource('http://localhost:3000/events')
+event.addEventListener('event1', (event)=>{
+    console.log(event)
+})
+</script>

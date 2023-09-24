@@ -1,0 +1,16 @@
+.four {
+  width: 22.58%;
+}
+
+.eight {
+  width: 58.7%;
+}
+
+.columns {
+  display: table-cell;
+  display: inline-flex;
+}
+
+.columns-child > div {
+  display: inline-table;
+}

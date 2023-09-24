@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "name": {
+        "type": "string",
+        "maxLength": 250
+      },
+      "effect": {
+        "type": "integer",
+        "maximum": 9,
+        "minimum": 0
+      },
+      "power": {
+        "type": "integer",
+        "maximum": 255,
+        "minimum": 0,
+        "$comment": "UInt8"
+      },
+      "price": {
+        "type": "integer",
+        "maximum": 65535,
+        "minimum": 0,
+        "$comment": "UInt16"
+      }
+    },
+    "additionalProperties": false,
+    "maxProperties": 4
+  }
+}

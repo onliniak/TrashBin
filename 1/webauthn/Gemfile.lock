@@ -1,0 +1,45 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    android_key_attestation (0.3.0)
+    awrence (1.2.1)
+    bindata (2.4.8)
+    cbor (0.5.9.6)
+    cose (1.2.0)
+      cbor (~> 0.5.9)
+      openssl-signature_algorithm (~> 1.0)
+    jwt (2.2.2)
+    openssl (2.2.0)
+    openssl-signature_algorithm (1.1.1)
+      openssl (~> 2.0)
+    rack (2.2.3)
+    roda (3.43.1)
+      rack
+    safety_net_attestation (0.4.0)
+      jwt (~> 2.0)
+    securecompare (1.0.0)
+    sequel (5.43.0)
+    tpm-key_attestation (0.10.0)
+      bindata (~> 2.4)
+      openssl-signature_algorithm (~> 1.0)
+    webauthn (2.5.0)
+      android_key_attestation (~> 0.3.0)
+      awrence (~> 1.1)
+      bindata (~> 2.4)
+      cbor (~> 0.5.9)
+      cose (~> 1.1)
+      openssl (~> 2.1)
+      safety_net_attestation (~> 0.4.0)
+      securecompare (~> 1.0)
+      tpm-key_attestation (~> 0.10.0)
+
+PLATFORMS
+  x86_64-linux
+
+DEPENDENCIES
+  roda (~> 3.43)
+  sequel (~> 5.43)
+  webauthn (~> 2.5)
+
+BUNDLED WITH
+   2.2.16
