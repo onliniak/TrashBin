@@ -1,0 +1,19 @@
+# frozen_string_literal: true
+
+source 'https://rubygems.org'
+
+# git_source(:github) {|repo_name| "https://github.com/#{repo_name}" }
+
+gem 'irb', '~> 1.2', group: :development            # Terminal
+gem "rdoc", "~> 6.2", group: :development           # Documentation formatter
+gem 'reek', '~> 6.0', group: :development           # Code smells
+gem 'rubocop', '~> 1.1', group: :development        # Linter
+gem "solargraph", "~> 0.13.2", group: :development  # Intellisense | vscode IDE
+gem 'sqlite3', '~> 1.4', group: :development        # Database
+gem 'yard', '~> 0.9.25', group: :development        # Crystal-style documentation
+
+
+gem "gettext", "~> 3.3"
+gem "liquid", "~> 4.0"          # Templates
+gem "locale", "~> 2.1"          # For gettext
+gem 'sequel', '~> 5.38'         # ORM 

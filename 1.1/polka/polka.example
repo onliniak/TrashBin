@@ -1,0 +1,15 @@
+const polka = require('polka')
+const app = polka();
+
+app.get('/', (req, res) => {
+    res.end('Hello world!')
+  });
+  
+app.get('/users', (req, res) => {
+    res.end('Get all users!')
+  });
+
+app.listen(3000, err => {
+    if (err) throw err;
+    console.log(`> Running on localhost:3000`);
+  });

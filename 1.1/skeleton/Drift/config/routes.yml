@@ -1,0 +1,7 @@
+# Routes
+default:
+  path: /
+  controller: App\Controller\DefaultController
+mercure:
+  path: /new
+  controller: App\Controller\Mercure:Publish
