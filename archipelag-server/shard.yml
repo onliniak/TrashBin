@@ -1,0 +1,21 @@
+name: archipelag-server
+version: 0.1.0
+
+authors:
+  - Rafael Pszenny <34192273+onliniak@users.noreply.github.com>
+
+targets:
+  archipelag-server:
+    main: src/archipelag-server.cr
+
+dependencies:
+  kemal:
+    github: kemalcr/kemal
+
+development_dependencies:
+  ameba:
+    github: veelenga/ameba
+
+crystal: 1.3.2
+
+license: MIT

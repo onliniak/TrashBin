@@ -1,0 +1,1 @@
+Heurystyka – umiejętność wykrywania nowych faktów oraz znajdowania związków między faktami, zwłaszcza z wykorzystaniem hipotez. Na podstawie istniejącej wiedzy stawia się hipotezy, których nie trzeba udowadniać.

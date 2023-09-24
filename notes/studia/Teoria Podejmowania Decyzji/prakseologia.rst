@@ -1,0 +1,1 @@
+Prakseologia (gr. práksis, prákseos (prâxis) – praktyka, czynność + lógos – nauka) to nauka o sprawnym działaniu, która bada uwarunkowania efektywności świadomych i celowych czynności ludzkich z punktu widzenia skuteczności.

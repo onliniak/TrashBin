@@ -1,0 +1,1 @@
+Są skierowane do konkretnego państwa.
