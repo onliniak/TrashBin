@@ -1,0 +1,68 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "weapon": {
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "integer"
+        },
+        "type": {
+          "type": "string",
+          "enum": [
+            "sword",
+            "2handsword",
+            "bow",
+            "crossbow",
+            "magic",
+            "polearm"
+          ]
+        }
+      },
+      "ammo": {
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "integer"
+          },
+          "supply": {
+            "type": "integer"
+          }
+        },
+        "shield": {
+          "additionalProperties": false,
+          "properties": {
+            "id": {
+              "type": "integer"
+            }
+          }
+        },
+        "greave": {
+          "properties": {
+            "id": {
+              "type": "integer"
+            }
+          }
+        },
+        "armor": {
+          "additionalProperties": false,
+          "properties": {
+            "id": {
+              "type": "integer"
+            }
+          }
+        },
+        "helm": {
+          "additionalProperties": false,
+          "properties": {
+            "id": {
+              "type": "integer"
+            }
+          }
+        }
+      }
+    }
+  }
+}

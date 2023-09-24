@@ -1,0 +1,21 @@
+{
+  "name": "generator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "handlebars": "^4.7.7",
+    "jsdom": "^17.0.0",
+    "mongodb": "^4.1.2"
+  },
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "jasmine": "^3.9.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

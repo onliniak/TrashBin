@@ -1,0 +1,26 @@
+{
+  "city": [
+    {
+      "district": "a",
+      "locations": [
+        {
+          "name": "a",
+          "ddd": "D"
+        }
+      ]
+    },
+    {
+      "district": "b",
+      "locations": [
+        {
+          "name": "1",
+          "ddd": "C"
+        },
+        {
+          "name": "2",
+          "ddd": "C"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "stats": {
+      "$ref": "https://466bafaa6b57.ngrok.io/stats.json"
+    }
+  }
+}
