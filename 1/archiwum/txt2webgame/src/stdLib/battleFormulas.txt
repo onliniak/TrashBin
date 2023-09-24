@@ -1,0 +1,5 @@
+Zbroja = Ciężar
+Ciężar zmniejsza szansę na przeżycie w starciu z spadającymi kamieniami/drzewami i szybkimi przeciwnikami.
+
+Długa broń = powolna, większy zasięg i obrażenia.
+Zasięg broni wpływa na ukrycie (skrytobójstwo).

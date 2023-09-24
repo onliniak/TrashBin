@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>txt2WebGame</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon.png">
+    <link rel="stylesheet" href="http://127.0.0.1:8080/style.css">
+</head>
+
+<body>
+    <main class="flex-container">
+        <aside class="flex-item">
+            <input type="file" onchange="readFile(this)" accept=".yaml,.yml">
+        </aside>
+        <article class="flex-item">
+            <img loading="lazy">
+            <div id="description"></div>
+            <div id="content"></div>
+        </article>
+        <aside class="flex-item">
+        </aside>
+    </main>
+    <script type="module" src="http://127.0.0.1:8080/index.mjs"></script>
+</body>
+
+</html>
