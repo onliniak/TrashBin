@@ -1,0 +1,6 @@
+src
+===
+
+Zgodnie z ogólnie przyjętymi zasadami, wszystkie pliki "wrzucamy" do 
+katalogu /src , katalog główny / jest przeznaczony na pliki niezwiązane z 
+frameworkiem jak .gitignore

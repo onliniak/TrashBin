@@ -1,0 +1,11 @@
+Ostrzeżenie, wersja alfa
+========================
+
+Zanim zagłębimy się w szczegóły, pamiętaj że wszelkie podane tu 
+informacje dotyczą wczesnej wersji. I choć niektóre elementy nie ulegną 
+większej zmianie, tak inne za jakiś czas będą wyglądać zupełnie inaczej.
+
+Warto zaznaczyć, że z chwilą pisania tego tekstu zakładano:
+  - Maszyna developerska ma do dyspozycji 4GB ramu i 2 rdzenie
+  - Łączna "waga" tekstu nie przekracza 500MB
+  - Kompilator jest rozwiązaniem tymczasowym, wydajność nie jest istotna

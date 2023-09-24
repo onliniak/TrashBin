@@ -1,0 +1,24 @@
+Ogólne założenia
+================
+
+0. Wszystkie pliki tekstowe i szablony są zamieniane na tabele SQL, a
+pliki HTML są generowane na poziomie klienta. 
+
+* Wykorzystanie YAMLa, jako podstawowego szablonu plików konfiguracyjnych.
+* Przygotowanie funkcji w HAXE oraz ich skompilowanych form w najpopularniejszych językach programowania.
+* Lokalne bazy danych, oparte o SQLite3.
+* Możliwość przeniesienia części danych do globalnej bazy w USA (https://www.heliohost.org/, dane osobowe zawsze są przechowywane lokalnie).
+* Zero konfiguracji.
+* Instalator napisany w Electron (Forge) JS. Z możliwością wgrania odpowiednich plików na serwer FTP lub SSH/SFTP.
+* Wysoka przenośność i niezależność od konkretnej platformy, czy języka programowania.
+* Pełne wsparcie dla znaków międzynarodowych UTF8.
+* Stworzenie osobnego klienta, opartego o czysty HTML/JS.
+
+A w przyszłości :
+
+* Oficjalny obraz dockera z kompilatorem.
+* Przygotowanie globalnej wymiany surowców oraz wiadomości pomiędzy serwerami.
+* Tryb wieloosobowy
+* Opracowanie osobnego trybu opowieści, czyli minigierek zarządzanych przez Mistrzów Gry.
+* Przygotowanie skryptów do Godot Engine, a co za tym idzie klienta graficznego.
+* Z tym, że zarówno gry 2D, jak i 3D wymagają więcej myślenia (ograniczone zasoby komputerów, wielowątkowość, kamera) więc zostawiam je na sam koniec.

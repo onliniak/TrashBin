@@ -1,0 +1,23 @@
+Proces Instalacji
+=================
+
+Więcej informacji znajdziesz w sekcji Framework/kompilator
+
+Słownik
+-------
+
+* Moduł = Kompletna wersja gry, grupa tematów.
+* Temat = Kilka komponentów, powiązanych ze sobą tematycznie.
+* Komponent = Niewielki fragment gry. Jedna rasa, jedno miasto itp.
+
+Od strony użytkownika - serwer
+------------------------------
+
+1. Pobierz instalator.
+2. Wybierz odpowiedni moduł oraz język programowania.
+3. Komputer przygotuje kompletną grę, wraz z wszystkimi konfiguracjami i bazami danych.
+4. Wybierz jak chcesz się połączyć ze swoim serwerem (FTP, SSH/SFTP).
+5. Odpowiednie pliki i foldery zostaną wysłane na serwer.
+6. Otwórz przeglądarkę i sprawdź, czy wszystko działa jak trzeba.
+7. Potwierdź usunięcie dodatkowych plików instalatora.
+8. Usuń lub zachowaj instalator.

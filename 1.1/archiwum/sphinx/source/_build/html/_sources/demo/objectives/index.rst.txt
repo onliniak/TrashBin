@@ -1,0 +1,16 @@
+Cele
+====
+
+Cele główne, to te które prowadzą do końca gry. Cele poboczne nie wpływają na zakończenie rozrywki.
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Główne:
+
+   key/gods
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Poboczne:
+
+   other/trade

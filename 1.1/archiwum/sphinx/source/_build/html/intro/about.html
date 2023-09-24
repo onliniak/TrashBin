@@ -1,0 +1,253 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="pl" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Ogólne założenia &mdash; Archipelag 0.1 - dokumentacja</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+        <script src="../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Indeks" href="../genindex.html" />
+    <link rel="search" title="Szukaj" href="../search.html" />
+    <link rel="next" title="Ostrzeżenie, wersja alfa" href="alpha.html" />
+    <link rel="prev" title="Czym jest Archipelag ?" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home" alt="Documentation Home"> Archipelag
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Wprowadzenie:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Czym jest Archipelag ?</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Ogólne założenia</a></li>
+<li class="toctree-l2"><a class="reference internal" href="alpha.html">Ostrzeżenie, wersja alfa</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Framework:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../framework/index.html">Struktura katalogów</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../framework/index.html#kompilator">Kompilator</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../framework/index.html#instalator">Instalator</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../framework/index.html#funkcje">Funkcje</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Wersja demonstracyjna:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../demo/index.html">Archipelag</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Archipelag</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="index.html">Czym jest Archipelag ?</a> &raquo;</li>
+        
+      <li>Ogólne założenia</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/intro/about.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="ogolne-zalozenia">
+<h1>Ogólne założenia<a class="headerlink" href="#ogolne-zalozenia" title="Stały odnośnik do tego nagłówka">¶</a></h1>
+<p>0. Wszystkie pliki tekstowe i szablony są zamieniane na tabele SQL, a
+pliki HTML są generowane na poziomie klienta.</p>
+<ul class="simple">
+<li><p>Wykorzystanie YAMLa, jako podstawowego szablonu plików konfiguracyjnych.</p></li>
+<li><p>Przygotowanie funkcji w HAXE oraz ich skompilowanych form w najpopularniejszych językach programowania.</p></li>
+<li><p>Lokalne bazy danych, oparte o SQLite3.</p></li>
+<li><p>Możliwość przeniesienia części danych do globalnej bazy w USA (<a class="reference external" href="https://www.heliohost.org/">https://www.heliohost.org/</a>, dane osobowe zawsze są przechowywane lokalnie).</p></li>
+<li><p>Zero konfiguracji.</p></li>
+<li><p>Instalator napisany w Electron (Forge) JS. Z możliwością wgrania odpowiednich plików na serwer FTP lub SSH/SFTP.</p></li>
+<li><p>Wysoka przenośność i niezależność od konkretnej platformy, czy języka programowania.</p></li>
+<li><p>Pełne wsparcie dla znaków międzynarodowych UTF8.</p></li>
+<li><p>Stworzenie osobnego klienta, opartego o czysty HTML/JS.</p></li>
+</ul>
+<p>A w przyszłości :</p>
+<ul class="simple">
+<li><p>Oficjalny obraz dockera z kompilatorem.</p></li>
+<li><p>Przygotowanie globalnej wymiany surowców oraz wiadomości pomiędzy serwerami.</p></li>
+<li><p>Tryb wieloosobowy</p></li>
+<li><p>Opracowanie osobnego trybu opowieści, czyli minigierek zarządzanych przez Mistrzów Gry.</p></li>
+<li><p>Przygotowanie skryptów do Godot Engine, a co za tym idzie klienta graficznego.</p></li>
+<li><p>Z tym, że zarówno gry 2D, jak i 3D wymagają więcej myślenia (ograniczone zasoby komputerów, wielowątkowość, kamera) więc zostawiam je na sam koniec.</p></li>
+</ul>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="alpha.html" class="btn btn-neutral float-right" title="Ostrzeżenie, wersja alfa" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="index.html" class="btn btn-neutral float-left" title="Czym jest Archipelag ?" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2020, Archipelag Team
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

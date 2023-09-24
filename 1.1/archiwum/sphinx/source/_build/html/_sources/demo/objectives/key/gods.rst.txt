@@ -1,0 +1,57 @@
+Bogowie
+=======
+
+Właśnie kończy się średniowiecze i nastaje coś na kształt renesansu. 
+Budowane są nowe maszyny, uzdrowiciele znajdują lekarstwa na kolejne 
+choroby, rozwija się chirurgia i sztuka. Wielu uważa się za równych 
+bogom, uważają że są w stanie pokonać samą Śmierć, o słabiutkich 
+państewkach nie wspominając. 
+
+Przez ostatnich tysiąc lat bogowie oparli całą swą potęgę o śmiertelników, 
+za każdą modlitwę i każdą kapliczkę wzrastała ich moc. Problem w tym, że 
+ostatnimi czasy zaczęli ją tracić. I choć wciąż są potężniejsi od większej 
+części mieszkańców, wiedzą że jeśli nie zadziałają w tej chwili stracą 
+całą swą potęgę, nad którą pracowali przez miliony lat.
+
+Na ziemii pojawiają się oznaki ich gniewu, tsunami zalewa nadmorskie 
+osady, trzęsienia ziemi, lądy są oddzielane od siebie, rzeki lawy 
+i inne skutki budowy miasta tuż przy czynnym wulkanie.
+
+W każdym bądź razie wykształca nam się kolejna warstwa strategiczna, od tej chwili hierarchia wygląda tak:
+  1. Bogowie wpływają na akcję całej gry
+  2. Królowie muszą reagować na bieżąco, by ich królestwa przetrwały
+  3. Zwykli mieszkańcy robią co mogą, by ocalić swoje życie
+
+Sam system wygląda tak:
+  - Bogowie zaczynają od 500 punktów mocy
+  - Bogowie mają do dyspozycji dwie talie kart (nagród i kar), z określonymi premiami/karami dla śmiertelników i liczbą punktów mocy, które muszą wydać by ich użyć.
+  - Liczba kart jest ograniczona, co oznacza że po ich użyciu nie można ich użyć ponownie
+  - Punkty mocy są odnawiane raz dziennie, a ich ilość zależy od ilości wierzących i świątyń
+  - Za każdego wierzącego mamy pół punkta mocy
+  - Opcjonalnie, wierzący mogą raz dziennie przekazać swe punkty wiary, każde 10 to 1 punkt mocy
+  - Za kapliczkę 1 punkt
+  - Za małą świątynię 5 punktów
+  - Za średnią 10 punktów
+  - Za dużą 25 punktów
+  - Każdy artefakt, który jest w użyciu zwiększa ilość mocy o 100 (każdego dnia).
+  - Jeśli nikt nie wierzy w dane bóstwo i nie ma czynnych świątyń, jego moc spada o 10 każdego dnia.
+
+Bogowie potrzebują mocy, by funkcjonować. Gdy spadnie poniżej zera nie giną 
+ale "wypadają z rankingu" i nie mogą już wpływać na nasz świat. Porzucone 
+bóstwo można ożywić, jeśli zbierze się 10 magów z 1 000 punktów wiary każdy 
+i przekaże swe punkty wiary, na 100 punktów mocy.
+
+W zależności od nastroju, raz na jakiś czas będą się pojawiać określone kary i premie,
+np podróże zostaną wstrzymane ze względu na kataklizm albo wszyscy przebywający na wyspie X otrzymają nagle premię do określonego rzemiosła. 
+O ostatnich wydarzeniach przeczytasz w gazecie.
+
+Zwycięstwo
+----------
+Jak przystało na cel główny, istnieje możliwość zakończenia ery poprzez 
+pokonanie wszystkich bóstw (zmniejszenie ich mocy poniżej zera) lub odzyskanie 
+przez nie 5 000 punktów mocy. 
+
+Odpowiednio prowadzi to do zakończeń:
+  - Zwycięstwo śmiertelników
+  - Boski ład (w przypadku, gdy żaden z nich nie odpadł, a wszyscy razem mają 5 000 mocy)
+  - Wielki Tyran (gdy jedno z nich zyskuje 5 000 mocy oraz przynajmniej jedno z pozostałych odpadło)

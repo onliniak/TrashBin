@@ -1,0 +1,13 @@
+Mechanika
+=========
+
+Archipelag jest pisany pod kątem komputerów, z tego powodu używamy dwóch 
+kości K10, z których jedna jest cyfrą dziesiętną, a druga cyfrą jedności. 
+
+Jeśli chodzi o bitwy, to używamy pojedynczej kości K6. Wynik parzysty 
+oznacza trafienie, a nieparzysty chybienie. Dla większej przewidywalności 
+używamy modyfikatorów → sam rzut pozytywny oceniany jest jako 100. Za każde 
+10 punktów uniku/celności ten wynik zwiększa się lub zmniejsza o 1 punkt. 
+Starcie wygrywa ten, kto ma większą liczbę. Jeśli są równe to cios zostaje 
+odbity. Jeśli obrońca ma niższy poziom, to za każdy poziom różnicy 
+otrzymuje 1 punkt obrony.

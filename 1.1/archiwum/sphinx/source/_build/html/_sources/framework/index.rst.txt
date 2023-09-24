@@ -1,0 +1,27 @@
+Struktura katalogów
+===================
+
+.. toctree::
+
+   basic/index
+
+Kompilator
+==========
+
+.. toctree::
+
+   basic/compiler
+
+Instalator
+==========
+
+.. toctree::
+
+   basic/wizard
+
+Funkcje
+=======
+
+.. toctree::
+
+   dev/index

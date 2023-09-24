@@ -1,0 +1,21 @@
+Archipelag
+==========
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Słowem wstępu:
+
+   intro/index
+   intro/mech
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Miejsce akcji:
+
+   world/index
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Cele:
+
+   objectives/index

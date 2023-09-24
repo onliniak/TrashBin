@@ -1,0 +1,11 @@
+Haxe never dead
+===============
+
+Największą zaletą Archipelagu, ma być automatyczne tłumaczenie na 
+kolejne języki programowania. W 2020 jedynym popularnym rozwiązaniem 
+tego typu był Haxe, stąd też wykorzystano go jako "podwójny kompilator". 
+Z jednej strony kod Haxe tłumaczony jest na klasy PHP/Pythona/Node, a 
+z drugiej pliki YAML są tłumaczone na kod HTML oraz bazy danych SQLite3.
+ 
+Oczywiście większa część kompilatora ma znaczenie jedynie dla team core,
+w przypadku większości użytkowników wystarczy wiedza zawarta w Strukturze katalogów.
