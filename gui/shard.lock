@@ -1,0 +1,18 @@
+version: 2.0
+shards:
+  bindgen:
+    git: https://github.com/papierkorb/bindgen.git
+    version: 0.7.0+git.commit.61ab5935fc406268958b967020266fc4aa57bbd4
+
+  qt5:
+    git: https://github.com/papierkorb/qt5.cr.git
+    version: 0.2.0+git.commit.b574f43334c068f9d61e496c656be79886a4468e
+
+  spoved:
+    git: https://github.com/spoved/spoved.cr.git
+    version: 0.8.1
+
+  toka:
+    git: https://github.com/kalinon/toka.git
+    version: 0.1.2+git.commit.622fb6642b158b10517fb26b69e2e63be00980d9
+
