@@ -1,0 +1,29 @@
+name: µPub
+version: 0.1.0
+
+authors:
+  - Rafael Pszenny <RafaelPszenny@caramail.com>
+
+targets:
+  server:
+    main: src/µPub.cr
+
+dependencies:
+  kemal:
+    github: kemalcr/kemal
+    branch: master
+  myhtml:
+    github: kostya/myhtml
+  db:
+    github: crystal-lang/crystal-db
+  sqlite3:
+    github: crystal-lang/crystal-sqlite3
+
+development_dependencies:
+  ameba:
+    github: crystal-ameba/ameba
+    version: ~> 0.13.0
+
+crystal: 0.35.1
+
+license: MIT
