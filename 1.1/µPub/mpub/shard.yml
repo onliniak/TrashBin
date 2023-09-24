@@ -1,0 +1,22 @@
+name: mpub
+version: 0.1.0
+
+authors:
+  - your-name-here <your-email-here>
+
+targets:
+  mpub:
+    main: src/mpub.cr
+
+dependencies:
+  toro:
+    github: soveran/toro
+  indieauth:
+  micropub:
+  sqlite3:
+    github: crystal-lang/crystal-sqlite3
+    #version: 0.11.0
+
+crystal: 0.27.0
+
+license: MIT
