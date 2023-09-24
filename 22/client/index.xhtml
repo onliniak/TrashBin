@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pl" xmlns="http://www.w3.org/1999/xhtml" xml:lang="pl">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/styles/main.css" />
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="grid-container" style="display: grid;
+    grid-template: auto/ auto auto auto;">
+        <aside style="display: flex;
+        flex-direction: column;" id="leftSection" class="dragZone"></aside>
+        <main  id="dropZone"></main>
+        <aside>
+            <section id="rightSection"></section>
+            <section id="rightSectionExtra"></section>
+        </aside>
+        <section id="buttonsLine"></section>
+    </div>
+
+    <script type="module" src="assets/scripts/index.mjs"></script>
+</body>
+</html>

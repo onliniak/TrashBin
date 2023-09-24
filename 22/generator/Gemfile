@@ -1,0 +1,17 @@
+# frozen_string_literal: true
+
+source 'https://rubygems.org'
+
+# git_source(:github) { |repo_name| "https://github.com/#{repo_name}" }
+
+gem "mustache", "~> 1.1" # template engine
+gem "sequel", "~> 5.48"  # database
+gem "mysql2", "~> 0.5.3" # database
+gem "nokogiri", "~> 1.12"# XML parser
+gem "kramdown", "~> 2.3" # markdown
+
+gem 'solargraph', '~> 0.43.1', group: :development # IDE
+gem 'yard', '~> 0.9.26', group: :development # documentation
+gem 'rdoc', '~> 6.3', group: :development # documentation
+gem 'rspec', '~> 3.10', group: :development # tests
+gem 'rubocop', '~> 1.21', group: :development # linter
